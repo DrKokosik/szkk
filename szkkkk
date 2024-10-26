@@ -1,0 +1,122 @@
+package org.example;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        System.out.println("pierwszy program");
+
+        boolean done = false;
+        while (!done) {
+            try {
+
+                Scanner input = new Scanner(System.in);
+
+                System.out.println("Podaj pierwszą liczbe: ");
+                int number1 = input.nextInt();
+
+
+                System.out.println("Podaj drugą liczbe: ");
+                int number2 = input.nextInt();
+
+                System.out.println("Podaj trzecią liczbe: ");
+                int number3 = input.nextInt();
+
+                if (number1 > number2 && number1 > number3) {
+                    System.out.println("Największą cyfrą jest: " + number1);
+                }
+                if (number2 > number1 && number2 > number3) {
+                    System.out.println("Największą cyfrą jest: " + number2);
+                }
+                if (number3 > number1 && number3 > number2) {
+                    System.out.println("Największą cyfrą jest: " + number3);
+                }
+
+
+                if (number1 < number2 && number1 < number3) {
+                    System.out.println("Najmniejszą cyfrą jest: " + number1);
+                }
+                if (number2 < number1 && number2 < number3) {
+                    System.out.println("Najmniejszą cyfrą jest: " + number2);
+                }
+                if (number3 < number1 && number3 < number2) {
+                    System.out.println("Najmniejszą cyfrą jest: " + number3);
+                }
+
+                done = true;
+
+            } catch (InputMismatchException exception) {
+                System.out.println();
+                System.out.println(" Proszę wpisać liczby naturalne ");
+                System.out.println();
+
+
+//        boolean done = false;
+//        while (!done){
+//            try {
+//                Scanner input = new Scanner(System.in);
+//                System.out.println("Podaj liczbę: ");
+//                float number = input.nextFloat();
+//                input.close();
+//                System.out.println((1.8 * number)+ 32.0);
+//
+//                done = true;
+//
+//            } catch (InputMismatchException exception) {
+//                System.out.println(" Proszę podać liczbę z przecinkiem pomiędzy");
+//            }
+//            System.out.println();
+
+
+                //        boolean done = false;
+//        while (!done){
+//
+//        try {
+//            Scanner input = new Scanner(System.in);
+//            System.out.println("Podaj liczbę: ");
+//            int number = input.nextInt();
+//            input.close();
+//
+//            for (int i = 0; i < number; i++) {
+//                for (int j = 1; j <= number; j++) {
+//                    if (j < number) {
+//                        System.out.print(j + ",");
+//                    }else {
+//                        System.out.println(j);
+//                    }
+//                }
+//            }
+//
+//            done = true;
+//
+//        } catch (InputMismatchException exception) {
+//            System.out.println(" Proszę podać liczbę całkowitą");
+//        }
+//            System.out.println();
+
+
+                //        number = input.nextInt();
+
+//        for (int a = 0; a < number; a++) {
+//            for (int i = 0; i <= number; i++) {
+//                if (i < number) {
+//                    System.out.print(i + ",");
+//                } else {
+//                    System.out.println(i);
+//                }
+//            }
+                // float number;
+
+                // Scanner input = new Scanner(System.in);
+                // System.out.println("Podaj liczbę:");
+                // number = input.nextInt();
+                // System.out.println(number);
+
+                //  if (number % 2 == 0.0F)
+                //     System.out.println("Ta liczba jest parzysta");
+                //      else System.out.println("Ta liczba nie jest parzysta");
+            }
+        }
+    }
